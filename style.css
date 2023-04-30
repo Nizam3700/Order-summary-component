@@ -1,0 +1,169 @@
+/* google Font  */
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Lato&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;600;700&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+/* bgc_Desktop   */
+.bgc{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+/* container session  */
+.container{
+    position: relative;
+    left: auto;
+    top: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding:20px;
+    width: 60vh;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.container img {
+    height: 50%;
+    width: 40vh;
+    border-radius: 18px;
+    min-width: 100%;
+}
+
+h1{
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin: 20px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+}
+
+/* sub_container  */
+.sub_container{
+    display: flex;
+    margin: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+
+}
+.img_div{
+    margin: 3px;
+}
+.img_div img{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin: 10px;
+    height: 8vh;
+    width: 8vh;
+}
+
+.sub_container h2{
+    display: grid;
+    color: hsl(223, 47%, 23%);
+    margin: 20px;
+}
+span{
+    font-size: medium;
+    color: hsl(220, 15%, 55%);
+}
+a{
+    margin: auto;
+    color: hsl(245, 75%, 52%);
+}
+
+/* proceed to payment  */
+.proceed{
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px hsl(220, 15%, 55%) ;
+    background-color: hsl(245, 75%, 52%);;
+}
+.proceed h2{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+/* hover  for proceed to payment*/
+.proceed h2:hover{
+    color: black;
+}
+/* cancel order  */
+.cancel{
+    text-align: center;
+    margin-top: 30px;
+}
+.cancel p{
+    font-size: medium;
+    font-weight:bold;
+    color: hsl(217, 12%, 44%);
+}
+ /* attribution session  */
+.attribution {
+    margin: 30px;
+     font-size: 11px; 
+     text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+/* media query  Session */
+
+/* media query for moblie  */
+@media (min-width:375px) and (max-width: 400px){
+    .container{
+        width: 355px;
+    }
+    .sub_container{
+        width: 300px;
+    }
+    .img_div img{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin: 10px;
+        height: 18vh;
+        width: 8vh;
+    }
+}
+
+
+/* media query for Desktop  */
+@media (min-width:1440px ) {
+    .container{
+        width: 450px;
+    }
+    .sub_container{
+        width: 350px;
+    }
+    .img_div img{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        margin: 10px;
+        height: 8vh;
+        width: 8vh;
+    }
+}
